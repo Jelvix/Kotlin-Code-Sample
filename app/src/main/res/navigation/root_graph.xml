@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Jelvix demo CodeSample
+    Copyright © 2019 Jelvix. All rights reserved.-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.jelvix.jelvixkotlindemo.presentation.ui.fragment.search.SearchFragment"
+        android:label="SearchFragment">
+        <action
+            android:id="@+id/action_searchFragment_to_mediaDetailFragment"
+            app:destination="@id/mediaDetailFragment"
+            app:enterAnim="@anim/settings_slide_from_right"
+            app:exitAnim="@anim/settings_slide_to_left"
+            app:popEnterAnim="@anim/settings_slide_from_left"
+            app:popExitAnim="@anim/settings_slide_to_right" />
+        <argument
+            android:name="category"
+            app:argType="com.jelvix.jelvixkotlindemo.data.entity.Category" />
+    </fragment>
+    <fragment
+        android:id="@+id/mediaDetailFragment"
+        android:name="com.jelvix.jelvixkotlindemo.presentation.ui.fragment.detail.MediaDetailFragment"
+        android:label="MediaDetailFragment">
+        <argument
+            android:name="media"
+            app:argType="com.jelvix.jelvixkotlindemo.data.entity.MediaItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.jelvix.jelvixkotlindemo.presentation.ui.fragment.main.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/settings_slide_from_right"
+            app:exitAnim="@anim/settings_slide_to_left"
+            app:popEnterAnim="@anim/settings_slide_from_left"
+            app:popExitAnim="@anim/settings_slide_to_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_mediaDetailFragment"
+            app:destination="@id/mediaDetailFragment"
+            app:enterAnim="@anim/settings_slide_from_right"
+            app:exitAnim="@anim/settings_slide_to_left"
+            app:popEnterAnim="@anim/settings_slide_from_left"
+            app:popExitAnim="@anim/settings_slide_to_right" />
+    </fragment>
+</navigation>

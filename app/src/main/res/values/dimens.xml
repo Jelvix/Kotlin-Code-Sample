@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Jelvix demo CodeSample
+    Copyright © 2019 Jelvix. All rights reserved.-->
+<resources>
+
+    <!-- offsets -->
+    <dimen name="offset_2">2dp</dimen>
+    <dimen name="offset_4">4dp</dimen>
+    <dimen name="offset_8">8dp</dimen>
+    <dimen name="offset_10">10dp</dimen>
+    <dimen name="offset_12">12dp</dimen>
+    <dimen name="offset_16">16dp</dimen>
+    <dimen name="offset_20">20dp</dimen>
+    <dimen name="offset_24">24dp</dimen>
+    <dimen name="offset_30">30dp</dimen>
+    <dimen name="offset_42">42dp</dimen>
+    <dimen name="offset_48">48dp</dimen>
+    <dimen name="offset_52">52dp</dimen>
+    <dimen name="offset_60">60dp</dimen>
+    <dimen name="offset_96">96dp</dimen>
+
+    <!-- textSizes -->
+    <dimen name="textSize_12">12sp</dimen>
+    <dimen name="textSize_14">14sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="textSize_18">18sp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+    <dimen name="textSize_24">24sp</dimen>
+    <dimen name="textSize_32">32sp</dimen>
+    <dimen name="textSize_48">48sp</dimen>
+
+    <dimen name="icon_normal">40dp</dimen>
+    <dimen name="bottom_sheet_peek_height">64dp</dimen>
+
+</resources>

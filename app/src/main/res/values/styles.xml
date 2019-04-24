@@ -1,0 +1,50 @@
+<!--Jelvix demo CodeSample
+    Copyright © 2019 Jelvix. All rights reserved.-->
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/AppTheme.TextView</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+
+    <!--activities-->
+
+    <style name="AppTheme.Splash.SplashActivity" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.Root.RootActivity" parent="AppTheme"/>
+
+
+    <!--views-->
+
+    <style name="AppTheme.TextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="AppTheme">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="AppTheme.TextView.Title" parent="AppTheme.TextView">
+        <item name="android:textSize">@dimen/textSize_18</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.TextView.Date" parent="AppTheme.TextView">
+        <item name="android:textStyle">italic</item>
+    </style>
+</resources>
